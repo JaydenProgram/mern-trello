@@ -9,17 +9,16 @@ export default function Navbar() {
                     <img alt="MongoDB logo" className={css.logo} src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/Trello_logo.svg/2560px-Trello_logo.svg.png"></img>
                 </NavLink>
 
-                <div>
-                    <input type="text"/>
-                    <NavLink className={css.navLink} to="/create">
-                        Create Employee
+                <div className={css.search}>
+                    <input className={css.navLinkSearch} type="text" placeholder="Search"/>
+                    <NavLink className={css.navLinkButton} to="/create">
+                        CREATE
                     </NavLink>
                 </div>
 
-                <NavLink to="/">
-
-                </NavLink>
-
+                <div>
+                    <img src="../assets/hamburgerMenu.svg" alt=""/>
+                </div>
             </nav>
         </div>
     );
