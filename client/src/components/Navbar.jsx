@@ -16,8 +16,16 @@ export default function Navbar() {
                     </NavLink>
                 </div>
 
-                <div>
-                    <img src="../assets/hamburgerMenu.svg" alt=""/>
+                <div className={css.accountHamburger}>
+                    <p>USER</p>
+                    <div className={css.accountCircle}>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa6YvRump6DC1zR3Bu5fz9358Gcgviuu5nag&s" alt=""/>
+                    </div>
+
+                    <svg width="37" height="27" viewBox="0 0 37 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.875 25.375H35.125M1.875 13.5H35.125M1.875 1.625H35.125" stroke="black"
+                              strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
                 </div>
             </nav>
         </div>
